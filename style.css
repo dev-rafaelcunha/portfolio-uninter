@@ -1,0 +1,395 @@
+/* ESTILOS GERAIS */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px 80px;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .15);
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    top: 0;
+}
+
+header h2 a {
+    text-decoration: none;
+    color: #5402be;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 25px;
+    list-style: none;
+    cursor: pointer;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #555;
+}
+
+header nav ul li a:hover {
+    color: #5402be;
+}
+
+/* RESPONSIVIDADE HEADER */
+@media (max-width: 1067px) {
+    header h2 a .cv {
+        display: none;
+    }
+}
+
+/* RESPONSIVIDADE HEADER PARA TELAS MENORES */
+@media (max-width: 991px) {
+
+    header .nav {
+        display: none;
+    }
+
+    header img {
+        cursor: pointer;
+    }
+
+    header .nav-mobile {
+        position: absolute;
+        left: 0;
+        background-color: #fff;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .nav-mobile ul {
+        display: block;
+    }
+
+    header .nav-mobile ul li a {
+        font-size: 1.3rem;
+        line-height: 1.5;
+        color: #5402be;
+        position: relative;
+        bottom: 100px;
+    }
+
+    header .nav-mobile ul li a:hover {
+        color: #5402be;
+    }
+
+    header button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    header .nav-mobile {
+        display: none;
+    }
+}
+
+/* RESPONSIVIDADE HEADER PARA TELAS MAIORES */
+@media (min-width: 991px) {
+
+    header button {
+        display: none;
+    }
+
+    header .nav-mobile {
+        display: none;
+    }
+}
+
+/* MAIN */
+main {
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+main .about {
+    display: flex;
+    align-items: center;
+    padding: 40px 60px;
+}
+
+main h1 {
+    color: #000;
+}
+
+main .menu {
+    color: #5402be;
+}
+
+main img {
+    height: 200px;
+    margin-right: 30px;
+    border-radius: 5px;
+    border: 2px solid #5402be;
+}
+
+main p {
+    font-size: 1.3rem;
+    line-height: 2;
+    margin: 0;
+}
+
+main span {
+    color: #5402be;
+    font-weight: bold;
+}
+
+main .courses {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 20px;
+}
+
+main .linguages {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+main hr {
+    width: 550px;
+    margin: 10px 0 0 0;
+}
+
+main ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+main ul li {
+    padding: 0 5px 0 0;
+    font-size: .9rem;
+    font-weight: 600;
+    color: #5402be;
+}
+
+main .linguages {
+    display: block;
+}
+
+main .hr-linguages {
+    width: 200px;
+}
+
+main .linguages li {
+    line-height: 1.5;
+    text-align: center;
+}
+
+main form {
+    display: block;
+    margin-top: 15px;
+}
+
+main form input {
+    margin: 0 0 10px 0;
+    padding: 7px;
+    width: 390px;
+    background-color: #fff;
+    border-radius: 3px;
+    color: #000;
+    border: 1px solid #000;
+}
+
+main form input::placeholder {
+    color: #5402be;
+}
+
+main form input:focus {
+    outline: none;
+    border: 1px solid #5402be;
+}
+
+main h3 {
+    color: #555;
+    font-weight: normal;
+}
+
+main form label {
+    display: block;
+    font-size: .8rem;
+    text-align: left;
+}
+
+main form textarea {
+    resize: none;
+    color: #000;
+    padding: 5px 10px;
+}
+
+main button {
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: #fff;
+    color: #5402be;
+    cursor: pointer;
+    border: 1px solid #5402be;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+main button:hover {
+    background-color: #5402be;
+    color: #fff;
+}
+
+/* RESPONSIVIDADE MAIN PARA TELAS MENORES */
+@media(max-width: 991px) {
+    main {
+        text-align: center;
+        margin: 80px 0 30px;
+    }
+
+    main hr {
+        width: 200px;
+    }
+
+    main ul {
+        display: block;
+    }
+
+    main ul li {
+        line-height: 1.5;
+    }
+
+    main ul li span {
+        display: none;
+    }
+
+    main .about {
+        display: block;
+        padding: 0 40px;
+    }
+
+    main img {
+        margin: 0 0 15px 0;
+    }
+
+    main h1 {
+        margin-top: 60px;
+    }
+
+    main .p-about {
+        font-size: 1rem;
+    }
+}
+
+/* RESPONSIVIDADE MAIN PARA TELAS MAIORES */
+@media (min-width: 991px) {
+
+    main {
+        height: 100vh;
+        margin: 0;
+        padding: 0 40px;
+    }
+}
+
+/* FOOTER */
+footer {
+    padding: 10px 40px;
+    background-color: #5402be;
+    color: #eee;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul li {
+    padding: 0 20px;
+    list-style: none;
+    font-size: .9rem;
+    width: 200px;
+}
+
+footer .dev {
+    background-color: rgba(0, 0, 0, .15);
+    padding: 10px;
+    text-align: center;
+}
+
+footer .copy {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer .ru {
+    color: #ff006a;
+    text-align: right;
+}
+
+/* RESPONSIVIDADE FOOTER PARA TELAS MENORES */
+@media(max-width: 991px) {
+
+    footer .dev,
+    footer .ru {
+        display: none;
+    }
+
+    footer ul {
+        justify-content: center;
+    }
+
+    footer .copy {
+        text-align: start;
+    }
+}
+
+/* RESPONSIVIDADE FOOTER PARA TELAS MAIORES */
+@media(min-width: 991px) {
+
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+/* ESTILIZAÇÃO BARRA DE ROLAGEM */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3f0c83;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #444;
+}
+
+::selection {
+    background-color: #5402be;
+    color: #fff;
+}
